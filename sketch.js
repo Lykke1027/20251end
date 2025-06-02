@@ -45,11 +45,7 @@ function setup() {
 }
 
 function draw() {
-  push();
-  translate(width, 0); // 移動到畫面右側
-  scale(-1, 1);        // 水平鏡像
   image(video, 0, 0, width, height);
-  pop();
 
   if (!gameStarted) {
     drawStartButton();
